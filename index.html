@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c0f79172ab.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Oswald:wght@500&display=swap" rel="stylesheet"> 
+</head>
+<body>
+<nav>
+    <div class="nav-logo">
+        <h1>Stefanie Hesse</h1>
+    </div>
+    <div class="nav-links">
+        <a href="#index-box">About</a>
+        <a href="#work-box">Work</a>
+        <a href="#contact-box">Contact</a>
+        <a href="https://github.com/CirroStratonimbus"><i class="fa-brands fa-github"></i></a>
+        <a href="https:/discordapp.com/users/1049062071154774026"><i class="fa-brands fa-discord"></i></a>
+    </div>
+</nav>
+
+<main>
+<div class="index-box" id="index-box">
+    <div class="about-box">
+        <h1>Hi, I'm <span class="name">Stefanie</span></h1>
+        <h2>I'm a <span class="job">Web Developer</span></h2>
+        <p>Hi, I am an aspiring web developer who has recently finished a full stack web development bootcamp with HyperionDev. Throughout the course, I gained a strong foundation in web development and honed my skills in HTML, CSS, JavaScript, and front-end frameworks such as React. I also have experience with back-end languages such as Python and PHP, and am familiar with databases such as MySQL and MongoDB.</p>
+        <p>As a creative problem solver, I enjoy collaborating with others to create the best possible outcomes. I am excited to continue growing and refining my skills in web development, and am eager to make meaningful contributions to the field. I am passionate about web development and look forward to the opportunity to work on exciting projects in the future.</p>
+    </div>
+    <div class="picture-box">
+        <img src="images/imageedit_2_2388777275.jpg" alt="Stefanie Hesse">
+    </div>
+</div>
+
+<div class="work-box" id="work-box">
+    <div class="work-description"> 
+        <h3>Projects</h3>
+    </div>
+    <div class="work-grid-box">
+        <div class="grid-box-item item-1"><a href="https://cirrostratonimbus.github.io/hangman/">A simple Hangman Game</a></div>
+        <div class="grid-box-item item-2"><a href="https://cirrostratonimbus.github.io/banksy-copy/">Banksy Webpage Copy</a></div>
+        <div class="grid-box-item item-3"><a href="https://cirrostratonimbus.github.io/NameOrigin/">THE Name-Nationality Predictor!</a></div>
+        <div class="grid-box-item item-4"><a href="https://github.com/CirroStratonimbus?tab=repositories">Cost Calculator</a></div>
+        <div class="grid-box-item item-5"><a href="https://github.com/CirroStratonimbus?tab=repositories">To-do List</a></div>
+        <div class="grid-box-item item-6"><a href="https://github.com/CirroStratonimbus?tab=repositories">Art Gallery</a></div>
+        <div class="grid-box-item item-7"><a href="https://github.com/CirroStratonimbus?tab=repositories">Data Engineer Portfolio</a></div>
+    </div>
+</div>
+
+<div class="contact-box" id="contact-box">
+    <div class="contact-description">
+        <h3>Get in Touch!</h3>
+        <p>Just pop me a message or use one of the other chanels to get in touch.</p>
+    </div>
+    <div class="contact-form-box">
+        <form method="post" action="email_form.php" class="contact-form-box">
+            <div class="contact-item item-8">
+                <label>Name</label> <br>
+                <input type="text" name="name" size="40">
+            </div>
+
+            <div class="contact-item item-9">
+                <label>Email Address</label> <br>
+                <input type="text" name="email_address" size="40">
+            </div>
+            <div class="contact-item item-10">
+                <label>Message</label> <br>
+                <textarea id="message-box" name="message" cols="50" rows="10" placeholder="PHP not enabled on github pages"></textarea>
+            </div>
+            <input type="submit" name="send" value="Hit me up!">
+            <!-- <button type="button">Hit me up <i class="fa-sharp fa-solid fa-paper-plane"></i></button> -->
+        </form>
+    </div>
+</div>
+</main>
+
+</body>
+</html>

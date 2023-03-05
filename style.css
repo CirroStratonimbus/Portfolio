@@ -1,0 +1,353 @@
+/* global styles */
+* {
+    padding: 0;
+    margin: 0;
+    scroll-snap-type: y proximity;
+}
+
+html {
+    scroll-snap-type: y mandatory;
+  }
+
+/* body and nav styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F5F3F5;
+}
+
+nav {
+    background-color: #1e1c1c;
+    height: 10vh;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 0 5vw;
+    opacity: 0.95;
+    position: fixed; 
+    top: 0; 
+    z-index: 999;
+    width: 90%; 
+}
+
+.nav-logo {
+    display: flex;
+    flex-grow: 2;
+    align-items: center;
+    height: 10vh;
+    width: 10vw;
+    margin: 0 6%;
+    color: #f5f5f5;
+    font-family: 'Oswald', sans-serif;
+}
+
+.nav-links {
+    display: flex;
+}
+
+nav a {
+    display: flex;
+    color: #f5f5f5;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+nav a:hover {
+    background: #ddd;
+    color: black;
+  }
+
+/* main */
+main {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+/* About */
+.index-box {
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    padding-top: 10vh;
+    scroll-snap-align: start;
+}
+
+.about-box {
+    display: inline-flex;
+    flex-direction: column;
+    width: 40vw;
+    justify-content: center;
+}
+
+.about-box h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    margin: 2rem 0;
+}
+
+.about-box p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding: 2rem 0 0 0;
+    line-height: 1.5;
+}
+
+.picture-box{
+    width: 40vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.picture-box img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* work */
+.work-box {
+    display: flex;
+    width: 80vw;
+    align-self: center;
+    justify-content: center;
+    height: 90vh;
+    padding-top: 10vh;
+    scroll-snap-align: start;
+}
+
+.work-description {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    background-color: #D3D0CB;
+    justify-content: center;
+    font-family: 'Oswald', sans-serif;
+    border-style: solid;
+    border-color: white;
+    border-width: 10px;
+    border-right: 0px;
+}
+
+.work-description h3 {
+    font-size: 10vh;
+    transform: rotate(-90deg);
+    text-align: center;
+}
+
+.work-grid-box {
+    max-height: 90vh;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    gap: 10px;
+    padding-left: 10px;
+    position: relative;
+    padding: 10px;
+}
+
+.grid-box-item {
+    transition: transform 0.15s ease;
+  }
+
+  .grid-box-item a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5vh;
+    text-align: center;
+}
+
+/* hover effect to pop-up  */
+.grid-box-item:hover {
+    transform: scale(1.03);
+    z-index: 1;
+    color: black;
+    transition-delay: 0.15s;
+  }
+
+.item-1 {
+    background-color: #C179B9;
+    grid-row: 1 / 1;
+    grid-column: 1 / 5;
+}
+
+.item-2 {
+    background-color: #388697;
+    grid-row: 2 / 5;
+    grid-column: 2 / 4;
+}
+
+.item-3 {
+    background-color: #228CDB;
+    grid-row: 1 / 3;
+    grid-column: 5 / 8;
+}
+
+.item-4 {
+    background-color: #FED766;
+    grid-row: 7 / 8;
+    grid-column: 5 / 8;
+}
+
+.item-5 {
+    background-color: #57CC99;
+    grid-row: 3 / 5;
+    grid-column: 4 / 8;
+}
+
+.item-6 {
+    background-color: rgb(244, 255, 127);
+    grid-row: 5 / 5;
+    grid-column: 1 / 8;
+}
+
+.item-7 {
+    background-color: #03F7EB;
+    grid-row: 6 / 8;
+    grid-column: 1 / 4;
+}
+
+/* contact form */
+.contact-box {
+    height: 90vh;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
+.contact-description {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    justify-content: center;
+    font-size: 3vh;
+}
+
+.contact-description h3 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    font-size: 7vh;
+    margin-bottom: 1rem;
+    color: #1F2421;
+}
+
+.contact-description p {
+    width: 90%;
+    font-family: 'Oswald', sans-serif;
+    color: #1F2421;
+    padding-bottom: 20px;
+}
+
+.contact-form-box {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+}
+
+.contact-item{
+    display: flex;
+    flex-direction: column;
+    color: #1F2421;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.7vh;
+    margin-bottom: 1.5rem;
+    max-width: 450px;
+}
+
+input {
+    padding: 7px;
+    border-radius: 3px;
+}
+
+button {
+    padding: 7px;
+    border-radius: 3px;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.7vh;
+    margin-top: 1rem;
+    max-width: 200px;
+    margin-left: 25%;
+}
+
+input[type=submit] {
+    padding: 7px;
+    border-radius: 3px;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.7vh;
+    margin-top: 1rem;
+    max-width: 200px;
+    margin-left: 25%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+
+/* For extremely small screen devices (595px and below) */
+@media only screen and (max-width: 950px) {
+    .nav-logo{
+        display: none;
+    }
+
+    .index-box {
+        display: block;
+        padding-left: 10%;
+        height: 200vh;
+    }
+
+    .about-box{
+        width: 80vw;
+        height: 90vh;
+        padding-top: 10vh;
+        scroll-snap-align: start;
+    }
+    
+    .about-box h1{
+        margin-top: 0;
+    }
+
+    .picture-box {
+        width: 80vw;
+        height: 90vh;
+        padding-top: 10vh;
+        scroll-snap-align: start;
+    }
+
+    .contact-box{
+        display: block;
+        height: 85vh;
+        padding-top: 15vh;
+        padding-left: 10vw;
+    }
+
+    .contact-description,
+    .contact-form-box {
+        width: 80vw;
+    }
+
+    #message-box {
+    height: 10vh;
+    }
+}
